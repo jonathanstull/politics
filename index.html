@@ -11,23 +11,65 @@
 <body>
   <div class="container">
     <form id="politics">
-      <div>
-        <label for="question1">Question 1</label>
-        <input id="question1" class="form-control" type="text">
+      <div class='form-group'>
+        <div>
+          <label for="question1">Question 1</label>
+          <input id="question1" class="form-control" type="text">
+        </div>
       </div>
-      <div>
-        <label for="question2">Question 2</label>
-        <input id="question2" class="form-control" type="text">
+      <div class='form-group'>
+        <p>Should there be a federally administrated and taxpayer-funded healthcare system?</p>
+        <div class='radio'>
+          <label>
+            <input type='radio' name='healthcare' value='0'>
+            No
+          </label>
+          <label>
+            <input type='radio' name='healthcare' value='' checked>
+            ?
+          </label>
+          <label>
+            <input type='radio' name='healthcare' value='1'>
+            Yes
+          </label>
+        </div>
       </div>
-      <div>
-        <label for="question3">Question 3</label>
-        <input id="question3" class="form-control" type="text">
+      <div class='form-group'>
+        <p>Should the powers of government be vested at the state or national level?</p>
+        <div class='radio'>
+          <label>
+            <input type='radio' name='national-state' value='0'>
+            State Level
+          </label>
+          <label>
+            <input type='radio' name='national-state' value='' checked>
+            ?
+          </label>
+          <label>
+            <input type='radio' name='national-state' value='1'>
+            National Level
+          </label>
+        </div>
       </div>
-      <div>
-        <label for="question4">Question 4</label>
-        <input id="question4" class="form-control" type="text">
+      <div class='form-group'>
+        <p>Do you believe in tax-funded wealth redistribution programs?</p>
+        <div class='radio'>
+          <label>
+            <input type='radio' name='wealth-redistribution' value='0'>
+            No
+          </label>
+          <label>
+            <input type='radio' name='wealth-redistribution' value='' checked>
+            ?
+          </label>
+          <label>
+            <input type='radio' name='wealth-redistribution' value='1'>
+            Yes
+          </label>
+        </div>
       </div>
     </form>
+    <div id='output'></div>
   </div>
 </body>
 </html>
