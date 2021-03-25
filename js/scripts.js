@@ -15,7 +15,7 @@ $(document).ready(function () {
     if (Number.isNaN(totalScore)) {
       messageToAnswerer = MESSAGE_TO_UNDECIDED
     } else if (totalScore <= 1) {
-      messageToAnswer = MESSAGE_TO_CONSERVATIVE
+      messageToAnswerer = MESSAGE_TO_CONSERVATIVE
     } else if (totalScore === 2) {
       messageToAnswerer = MESSAGE_TO_MODERATE
     } else {
